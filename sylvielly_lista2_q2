@@ -1,0 +1,41 @@
+#---------------------------------------------------------------
+#Licenciatura em Física - IFCE Campus Fortaleza
+#Disciplina: Física Computacional
+#Sylvielly Sousa
+#---------------------------------------------------------------
+
+#lista de exercicio 2 - questão 1 - volume dos solidos
+
+import math             #importação da biblioteca math
+pi = math.pi
+
+print("Tipos de sólido: 1 - Cubo / 2 - Esfera / 3 - Cilindro / 4 - Cone / 5 - Pirâmide")
+solido = int(input("Digite o tipo de sólido:")) 
+
+if solido==1:
+  l_cilindro = float(input("Digite o valor do lado:"))
+  v_cubo = l_cilindro*l_cilindro*l_cilindro
+  print("O volume do cubo é: ",v_cubo)
+elif solido==2:
+    r_esfera = float(input("Digite o valor do raio:"))
+    v_esfera = (4/3)*pi*r_esfera*r_esfera*r_esfera
+    print("O volume da esfera é: ",v_esfera)
+elif solido==3:
+      r_cilindro = float(input("Digite o valor do raio:"))
+      h_cilindro = float(input("Digite o valor da altura:"))
+      v_cilindro = pi*r_cilindro*r_cilindro*h_cilindro
+      print("O volume do cilindro é: ",v_cilindro)
+elif solido==4:
+        r_cone = float(input("Digite o valor do raio:"))
+        h_cone = float(input("Digite o valor da altura:"))
+        v_cone = (1/3)*pi*r_cone*r_cone*h_cone
+        print("O volume do cone é: ",v_cone)
+elif solido == 5:
+          print("Digite um valor largura da base:")
+          l_base = float(input("Digite o valor da largura:"))
+          c_base = float(input("Digite o valor do comprimento:"))
+          h_base = float(input("Digite o valor da altura:"))
+          v_piramide = (1/3)*l_base*c_base*h_base
+          print("O volume da piramide é: ",v_piramide)	
+else:
+    print("Opção inválida")
