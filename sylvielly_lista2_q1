@@ -1,0 +1,15 @@
+#---------------------------------------------------------------
+#Licenciatura em Física - IFCE Campus Fortaleza
+#Disciplina: Física Computacional
+#Sylvielly Sousa
+#---------------------------------------------------------------
+
+#lista de exercicio 2 - questão 2 - volume do paralelogramo
+
+a = float(input("Digite o valor de largura: "))
+h = float(input("Digite o valor de altura:"))
+b = float(input("Digite o valor de comprimento:"))
+und = input("Informe a unidade de medida:")
+
+volume = a*b*h
+print("O volume do paralelogramo é: ",volume,und)
