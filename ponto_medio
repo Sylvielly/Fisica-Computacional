@@ -1,0 +1,36 @@
+#---------------------------------------------------------------
+#Licenciatura em Física - IFCE Campus Fortaleza
+#Disciplina: Física Computacional
+#Sylvielly Sousa
+#---------------------------------------------------------------
+#bibliotecas
+
+import matplotlib.pyplot as plt
+import numpy as np
+import math
+#---------------------------------------------------------------
+#equacao do ponto medio, midpoint = ((x1+x2)/2,(y1+y2)/2)
+
+x1 = float(input("Digite valor x1: "))
+x2 = float(input("Digite valor x2: "))
+y1 = float(input("Digite valor y1: "))
+y2 = float(input("Digite valor y2: "))
+
+x_midpoint = (x1+x2)/2
+y_midpoint = (y1+y2)/2
+
+print ("As coordenadas do ponto médio são: (x = %0.1f, y = %0.1f )" %(x_midpoint, y_midpoint))
+#---------------------------------------------------------------
+#plotagem
+plt.plot(x_grafico,y_grafico, color='r')
+plt.scatter(x_grafico,y_grafico, color='b')
+plt.scatter(x1,y1)
+plt.scatter(x2,y2)
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Gráfico")
+#plt.xticks(np.arange(0, 7, step=1))
+#plt.yticks(np.arange(0, 7, step=1))
+plt.grid(True)
+plt.show()
+#---------------------------------------------------------------
