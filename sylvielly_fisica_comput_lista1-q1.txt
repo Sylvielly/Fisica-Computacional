@@ -1,0 +1,73 @@
+#---------------------------------------------------------------
+#Licenciatura em Física - IFCE Campus Fortaleza
+#Disciplina: Física Computacional
+#Sylvielly Sousa
+#---------------------------------------------------------------
+
+# 1 - Converter unidade de medida: metro (comprimento), litro (capacidade), grama (massa).
+
+print("CONVERSOR DE UNIDADES")
+print("1 - Converter Comprimento (metro)")
+print("2 - Converter Capacidade (litro)")
+print("3 - Converter Massa (grama)")
+
+#menu criado para para oferecer ao usuario opcoes de escolha de grandeza
+opcao = input("Escolha uma opção (1, 2 ou 3): ")
+
+if opcao == "1":
+    metro = float(input("\nDigite o valor do comprimento em metros: "))
+    
+    #conversao
+    decimetro = metro*10
+    centimetro = metro*100
+    milimetro = metro*1000
+    decametro = metro/10
+    hectometro = metro/100
+    quilometro = metro/1000
+
+    
+    print(f"{metro} m = {decimetro} dm")
+    print(f"{metro} m = {centimetro} cm")
+    print(f"{metro} m = {milimetro} mm")
+    print(f"{metro} m = {decametro} dam")
+    print(f"{metro} m = {hectometro} hm")
+    print(f"{metro} m = {quilometro} km")
+
+elif opcao == "2":
+    litro = float(input("\nDigite o valor da capacidade em litros: "))
+    
+    #conversao
+    decilitro = litro*10
+    centilitro = litro*100
+    mililitro = litro*1000
+    decalitro = litro/10
+    hectolitro = litro/100
+    quilolitro = litro/1000
+
+    print(f"{litro} L = {decilitro} dL")
+    print(f"{litro} L = {centilitro} cL")
+    print(f"{litro} L = {mililitro} mL")
+    print(f"{litro} L = {decalitro} daL")
+    print(f"{litro} L = {hectolitro} hL")
+    print(f"{litro} L = {quilolitro} kL")
+
+elif opcao == "3":
+    grama = float(input("\nDigite o valor da massa em gramas: "))
+
+    #conversao
+    decigrama = grama*10
+    centigrama = grama*100
+    miligrama = grama*1000
+    decagrama = grama/10
+    hectagrama = grama/100
+    quilograma = grama/1000
+
+    print(f"{grama} g = {decigrama} dg")
+    print(f"{grama} g = {centigrama} cg")
+    print(f"{grama} g = {miligrama} mg")
+    print(f"{grama} g = {decagrama} dag")
+    print(f"{grama} g = {hectagrama} hg")
+    print(f"{grama} g = {quilograma} kg")
+
+else:
+    print("\nOpção inválida.")
